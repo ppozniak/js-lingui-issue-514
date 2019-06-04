@@ -1,0 +1,1 @@
+export const CONSTANT_FROM_OUTSIDE = 'weo weo';

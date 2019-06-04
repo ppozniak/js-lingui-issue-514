@@ -1,0 +1,22 @@
+{
+  "presets": ["@lingui/babel-preset-react", "@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-syntax-export-default-from",
+    "@babel/plugin-proposal-class-properties",
+    "babel-plugin-jsx-control-statements",
+    "macros",
+    "react-hot-loader/babel",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@pages": "./src/pages",
+          "@services": "./src/services",
+          "@sharedComponents": "./src/sharedComponents",
+          "@assets": "./src/assets"
+        }
+      }
+    ]
+  ]
+}
